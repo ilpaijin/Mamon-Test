@@ -1,0 +1,16 @@
+{
+    "name": "Mamon Test",
+    "authors": [{
+        "name": "ilpaijin",
+        "email": "ilpaijin@gmail.com"
+    }],
+    "require": {
+        "guzzlehttp/guzzle":"~6.0",
+        "symfony/http-foundation": "^2.7"
+    },
+     "autoload": {
+        "psr-4": {
+            "Ilpaijin\\": "src/Ilpaijin/"
+        }
+    }
+}
