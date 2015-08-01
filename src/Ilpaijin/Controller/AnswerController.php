@@ -48,9 +48,6 @@ class AnswerController
             return new JsonResponse(array('error' => 'Endpoint Not Found'), 404);
         }
 
-        $token = $this->container->get('request')->query->get('token');
-        $sum = $this->container->get('request')->query->get('sum');
-
         try {
             $answer = $this->container->get('mamonCase')->getAnswer($token.'/'.$sum);
         } catch (CaseException $e) {
