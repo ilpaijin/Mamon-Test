@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit bootstrap="tests/bootstrap.php"
+         syntaxCheck="false"
+         colors="true"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+>
+  <testsuites>
+    <testsuite name="MamonTest">
+      <directory>./tests/UnitTest</directory>
+    </testsuite>
+  </testsuites>
+  <filter>
+    <whitelist>
+      <directory>./src</directory>
+    </whitelist>
+  </filter>
+  <logging>
+    <log type="coverage-html" target="tmp/tests/codecoverage/"></log>
+  </logging>
+</phpunit>

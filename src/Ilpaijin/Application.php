@@ -89,4 +89,9 @@ class Application
     {
         return JsonResponse::create(array('error' => 'Endpoint Not Found'), 404)->send();
     }
+
+    public function getContainer()
+    {
+        return $this->container;
+    }
 }

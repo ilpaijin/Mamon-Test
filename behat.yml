@@ -1,0 +1,14 @@
+default:
+  formatters:
+    pretty:
+      verbose: true
+      paths: false
+      snippets: true
+  # autoload:
+    # '': %paths.base%/tests/BDD/bootstrap
+  suites:
+    mamon_case_suite:
+      paths:
+        - %paths.base%/tests/BDD/Suites/MamonCase
+      contexts:
+        - Tests\BDD\Suites\MamonCase\Contexts\MamonCaseContext
